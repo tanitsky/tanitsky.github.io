@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>等边角钢标准-规格型号尺寸与重量表查询指南</title>
+    <meta name="description" content="全面介绍等边角钢标准，涵盖GB/T 706等常用标准、规格型号尺寸表、理论重量计算、允许偏差、材质牌号及选购注意事项，帮助工程采购与设计人员快速查询参考。">
+    <meta name="keywords" content="等边角钢标准,角钢规格型号,等边角钢尺寸,角钢理论重量,GB/T706,热轧等边角钢,角钢标准">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f6f8;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 页眉 */
+        .site-header {
+            background: #1a2b3c;
+            color: #fff;
+            padding: 18px 0;
+            border-bottom: 3px solid #e67e22;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            background: #e67e22;
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 20px;
+            color: #fff;
+        }
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            color: #e67e22;
+        }
+        .header-contact {
+            font-size: 14px;
+            color: #b0c4d8;
+        }
+        /* 导航 */
+        .main-nav {
+            background: #243b4f;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .nav-list li a {
+            display: block;
+            padding: 14px 22px;
+            color: #dce6f0;
+            text-decoration: none;
+            font-size: 15px;
+            border-right: 1px solid #1a2b3c;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-list li a:hover {
+            background: #e67e22;
+            color: #fff;
+        }
+        .nav-list li:first-child a {
+            background: #e67e22;
+            color: #fff;
+            font-weight: 600;
+        }
+        /* 面包屑 */
+        .breadcrumb {
+            background: #eef1f4;
+            padding: 10px 0;
+            font-size: 14px;
+            border-bottom: 1px solid #dde2e7;
+        }
+        .breadcrumb a {
+            color: #2c6a9e;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        /* 首屏主区域 */
+        .hero-section {
+            background: linear-gradient(135deg, #1a2b3c 0%, #2c4a62 100%);
+            color: #fff;
+            padding: 48px 0 40px;
+        }
+        .hero-grid {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .hero-content {
+            flex: 1 1 55%;
+        }
+        .hero-content h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+            line-height: 1.3;
+            font-weight: 700;
+            border-left: 5px solid #e67e22;
+            padding-left: 18px;
+        }
+        .hero-content p {
+            font-size: 17px;
+            color: #cfdde9;
+            margin-bottom: 20px;
+        }
+        .hero-badges {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+        .hero-badge {
+            background: rgba(230,126,34,0.2);
+            border: 1px solid #e67e22;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #f3b37f;
+        }
+        .hero-stats {
+            flex: 1 1 30%;
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 24px 20px;
+            border-left: 4px solid #e67e22;
+            backdrop-filter: blur(4px);
+        }
+        .hero-stats h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #f0b37a;
+        }
+        .hero-stats ul {
+            list-style: none;
+        }
+        .hero-stats li {
+            padding: 6px 0;
+            font-size: 15px;
+            border-bottom: 1px dashed rgba(255,255,255,0.15);
+        }
+        .hero-stats li:last-child {
+            border-bottom: none;
+        }
+        .hero-stats strong {
+            color: #fff;
+            font-weight: 600;
+        }
+        /* 标准概述 */
+        .section-block {
+            padding: 40px 0;
+            background: #fff;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+        .section-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #1a2b3c;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e67e22;
+            display: inline-block;
+        }
+        .section-subtitle {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c4a62;
+            margin: 24px 0 12px;
+        }
+        .content-text {
+            font-size: 15.5px;
+            color: #3d5163;
+            margin-bottom: 16px;
+        }
+        .info-table-wrap {
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+            border-radius: 6px;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            font-size: 14.5px;
+            min-width: 600px;
+        }
+        .info-table th {
+            background: #1a2b3c;
+            color: #fff;
+            padding: 12px 10px;
+            text-align: center;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .info-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e6eaef;
+            text-align: center;
+        }
+        .info-table tr:nth-child(even) {
+            background: #f7f9fb;
+        }
+        .info-table tr:hover {
+            background: #eef3f7;
+        }
+        .note-box {
+            background: #fef9f3;
+            border-left: 4px solid #e67e22;
+            padding: 16px 18px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 14.5px;
+            color: #5a4a3a;
+        }
+        .note-box strong {
+            color: #a15a1a;
+        }
+        .check-list {
+            list-style: none;
+            margin: 12px 0;
+        }
+        .check-list li {
+            padding: 6px 0 6px 28px;
+            position: relative;
+            font-size: 15px;
+        }
+        .check-list li::before {
+            content: "✔";
+            color: #e67e22;
+            font-weight: bold;
+            position: absolute;
+            left: 4px;
+        }
+        /* 卡片式栏目 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 24px 0;
+        }
+        .card-item {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 22px 18px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+        }
+        .card-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            border-color: #e67e22;
+        }
+        .card-item h3 {
+            font-size: 18px;
+            color: #1a2b3c;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card-item h3 .card-icon {
+            background: #e67e22;
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        .card-item p {
+            font-size: 14px;
+            color: #4a5f70;
+        }
+        /* 注意事项 */
+        .attention-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .attention-item {
+            background: #f0f4f7;
+            border-radius: 8px;
+            padding: 18px;
+            border-left: 4px solid #2c6a9e;
+        }
+        .attention-item h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #1a2b3c;
+        }
+        .attention-item p {
+            font-size: 14px;
+            color: #3d5163;
+        }
+        /* FAQ */
+        .faq-section {
+            background: #fff;
+            padding: 40px 0;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+        .faq-item {
+            border-bottom: 1px solid #e8edf2;
+            padding: 18px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a2b3c;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .faq-question::before {
+            content: "Q";
+            background: #e67e22;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .faq-answer {
+            font-size: 15px;
+            color: #3d5163;
+            padding-left: 36px;
+        }
+        .faq-answer::before {
+            content: "A";
+            background: #2c6a9e;
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            margin-right: 10px;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #1a2b3c;
+            color: #9fb2c3;
+            padding: 30px 0 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .footer-about {
+            max-width: 360px;
+        }
+        .footer-about h4 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 17px;
+        }
+        .footer-links a {
+            color: #9fb2c3;
+            text-decoration: none;
+            display: block;
+            padding: 4px 0;
+        }
+        .footer-links a:hover {
+            color: #e67e22;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #2c4a62;
+            padding-top: 18px;
+            margin-top: 24px;
+            font-size: 13px;
+        }
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .attention-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-content h1 {
+                font-size: 28px;
+            }
+            .hero-grid {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 600px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-list li a {
+                padding: 12px 12px;
+                font-size: 14px;
+            }
+            .logo-text {
+                font-size: 20px;
+            }
+            .header-contact {
+                font-size: 13px;
+            }
+            .section-block, .faq-section {
+                padding: 28px 16px;
+            }
+            .section-title {
+                font-size: 22px;
+            }
+            .hero-content h1 {
+                font-size: 24px;
+            }
+            .container {
+                padding: 0 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">钢</div>
+            <div class="logo-text">钢标<span>网</span></div>
+        </div>
+        <div class="header-contact">标准查询 · 技术交流 · 采购参考</div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <ul class="nav-list">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">等边角钢标准</a></li>
+            <li><a href="#">规格尺寸表</a></li>
+            <li><a href="#">理论重量</a></li>
+            <li><a href="#">允许偏差</a></li>
+            <li><a href="#">材质牌号</a></li>
+            <li><a href="#">采购指南</a></li>
+            <li><a href="#">常见问题</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="breadcrumb">
+    <div class="container">
+        <a href="#">首页</a> &gt; <a href="#">钢铁标准</a> &gt; 等边角钢标准
+    </div>
+</div>
+
+<main>
+    <!-- 首屏 Hero -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>等边角钢标准</h1>
+                <p>等边角钢俗称角铁，是两边互相垂直成角形且边宽相等的长条钢材。其标准体系规定了尺寸规格、外形、重量及允许偏差等核心参数，是工程设计、生产制造与质量验收的重要技术依据。本页为您系统梳理常用标准与查询要点。</p>
+                <div class="hero-badges">
+                    <span class="hero-badge">GB/T 706-2016</span>
+                    <span class="hero-badge">热轧等边角钢</span>
+                    <span class="hero-badge">理论重量表</span>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <h3>核心标准速览</h3>
+                <ul>
+                    <li><strong>中国国标：</strong> GB/T 706-2016</li>
+                    <li><strong>尺寸范围：</strong> 20×20×3mm 至 200×200×24mm</li>
+                    <li><strong>常用钢号：</strong> Q235B、Q355B、Q420B</li>
+                    <li><strong>交货长度：</strong> 通常 4-12m 定尺或倍尺</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 标准概述 -->
+    <section class="section-block">
+        <div class="container">
+            <h2 class="section-title">等边角钢标准体系概览</h2>
+            <p class="content-text">等边角钢标准的核心是热轧型钢国家标准，目前国内主要执行 GB/T 706-2016《热轧型钢》。该标准代替了 GB/T 706-2008，整合并更新了热轧等边角钢的尺寸、外形、重量及允许偏差等技术要求。对于国际工程或进口材料，也常参考 ASTM A6/A6M、EN 10056-1 等国际标准。</p>
+            
+            <h3 class="section-subtitle">标准中关键的术语定义</h3>
+            <p class="content-text">根据标准规定，等边角钢以边宽和边厚的公称尺寸表示，例如“∠50×50×5”表示边宽为50mm、边厚为5mm的等边角钢。实际供货时需确认长度、定尺方式以及表面质量要求。标准的适用范围包括热轧等边角钢，不适用于不锈钢角钢及其他特殊用途角钢。</p>
+            
+            <div class="note-box">
+                <strong>特别提示：</strong> 选用等边角钢时，应优先确认执行标准年代号（如GB/T 706-2016），因为不同版本在尺寸允许偏差、弯曲度等指标上存在差异。采购合同应明确标注标准号及牌号。
+            </div>
+        </div>
+    </section>
+
+    <!-- 常用规格尺寸表 -->
+    <section class="section-block" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">常用等边角钢规格尺寸与理论重量</h2>
+            <p class="content-text">以下列出部分常用等边角钢规格的尺寸参数及理论重量（按GB/T 706标准计算，钢的密度按7.85g/cm³），供选型参考。更多完整规格参数请查阅标准原文。</p>
+            
+            <div class="info-table-wrap">
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>型号（边宽×边宽×边厚）mm</th>
+                            <th>截面面积 cm²</th>
+                            <th>理论重量 kg/m</th>
+                            <th>外表面积 m²/m</th>
+                            <th>惯性矩 Ix cm⁴</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>∠20×20×3</td><td>1.132</td><td>0.889</td><td>0.078</td><td>0.40</td></tr>
+                        <tr><td>∠25×25×3</td><td>1.432</td><td>1.124</td><td>0.098</td><td>0.81</td></tr>
+                        <tr><td>∠30×30×3</td><td>1.749</td><td>1.373</td><td>0.117</td><td>1.46</td></tr>
+                        <tr><td>∠30×30×4</td><td>2.276</td><td>1.786</td><td>0.117</td><td>1.84</td></tr>
+                        <tr><td>∠40×40×4</td><td>3.086</td><td>2.422</td><td>0.157</td><td>4.60</td></tr>
+                        <tr><td>∠40×40×5</td><td>3.791</td><td>2.976</td><td>0.156</td><td>5.53</td></tr>
+                        <tr><td>∠50×50×5</td><td>4.803</td><td>3.770</td><td>0.196</td><td>11.21</td></tr>
+                        <tr><td>∠50×50×6</td><td>5.688</td><td>4.465</td><td>0.196</td><td>13.12</td></tr>
+                        <tr><td>∠63×63×6</td><td>7.288</td><td>5.721</td><td>0.248</td><td>27.12</td></tr>
+                        <tr><td>∠63×63×8</td><td>9.515</td><td>7.469</td><td>0.247</td><td>34.46</td></tr>
+                        <tr><td>∠75×75×7</td><td>10.160</td><td>7.976</td><td>0.295</td><td>46.07</td></tr>
+                        <tr><td>∠75×75×8</td><td>11.503</td><td>9.030</td><td>0.294</td><td>51.85</td></tr>
+                        <tr><td>∠90×90×8</td><td>13.944</td><td>10.946</td><td>0.354</td><td>89.06</td></tr>
+                        <tr><td>∠100×100×10</td><td>19.261</td><td>15.120</td><td>0.393</td><td>179.51</td></tr>
+                        <tr><td>∠125×125×10</td><td>24.373</td><td>19.133</td><td>0.492</td><td>356.80</td></tr>
+                        <tr><td>∠160×160×12</td><td>37.441</td><td>29.391</td><td>0.629</td><td>779.53</td></tr>
+                        <tr><td>∠200×200×16</td><td>62.013</td><td>48.680</td><td>0.788</td><td>2100.64</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="content-text" style="font-size: 13px; color: #6b7f8e;">注：表列理论重量按密度7.85g/cm³计算；截面面积及惯性矩为参考值，精确数据以标准为准。角钢通常以理论重量计量交货。</p>
+        </div>
+    </section>
+
+    <!-- 标准关键指标 -->
+    <section class="section-block">
+        <div class="container">
+            <h2 class="section-title">等边角钢标准关键验收指标</h2>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h3><span class="card-icon">尺</span>尺寸允许偏差</h3>
+                    <p>边宽、边厚及顶端直角等均有规定偏差范围。例如边宽≤50mm时允许偏差±1.5mm，边厚≤5mm允许偏差±0.5mm（具体以标准条款为准）。验收时应重点抽测。</p>
+                </div>
+                <div class="card-item">
+                    <h3><span class="card-icon">弯</span>弯曲度与扭转</h3>
+                    <p>角钢每米弯曲度及总弯曲度需符合标准要求。通常总弯曲度不大于总长度的0.25%，且不得有明显扭转。对于高精度使用场景需特别关注。</p>
+                </div>
+                <div class="card-item">
+                    <h3><span class="card-icon">长</span>长度允许偏差</h3>
+                    <p>定尺或倍尺交货时长度允许偏差一般为0~+50mm。倍尺交货还应注明每个单倍尺的长度及余量长度，并在合同中注明。</p>
+                </div>
+                <div class="card-item">
+                    <h3><span class="card-icon">表</span>表面质量</h3>
+                    <p>角钢表面不得有裂纹、折叠、结疤、分层等有害缺陷。允许有局部发纹、凹坑、麻点等，但深度不得超过厚度允许偏差之半。</p>
+                </div>
+                <div class="card-item">
+                    <h3><span class="card-icon">材</span>材质与牌号</h3>
+                    <p>常用碳素结构钢Q235B、低合金高强度结构钢Q355B等。不同牌号对应不同力学性能与化学成分要求，需结合设计强度选材。</p>
+                </div>
+                <div class="card-item">
+                    <h3><span class="card-icon">重</span>重量偏差</h3>
+                    <p>按理论重量交货时，每批钢材实际重量与理论重量的允许偏差为±5%（型钢通常范围）。单根材重量偏差也有相应规定。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 选购与使用建议 -->
+    <section class="section-block" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">等边角钢选购与使用注意事项</h2>
+            <div class="attention-grid">
+                <div class="attention-item">
+                    <h4>① 明确标准版本</h4>
+                    <p>合同或图纸中应写明“GB/T 706-2016”，避免老版本混用。出口或外资项目需确认采用ASTM还是EN标准。</p>
+                </div>
+                <div class="attention-item">
+                    <h4>② 按需选择材质</h4>
+                    <p>普通建筑用Q235B即可，承受较大荷载或低温环境可选用Q355B或更高等级钢。注意不同牌号价格差异较大。</p>
+                </div>
+                <div class="attention-item">
+                    <h4>③ 核对理论重量</h4>
+                    <p>采购数量较大时，建议按理论重量乘以负偏差范围估算实际重量，避免结算纠纷。必要时进行过磅复核。</p>
+                </div>
+                <div class="attention-item">
+                    <h4>④ 检查表面缺陷</h4>
+                    <p>到货后抽样检查角钢端面是否平整、有无明显耳子、裂纹。镀锌角钢还需检查镀锌层均匀性与附着性。</p>
+                </div>
+                <div class="attention-item">
+                    <h4>⑤ 关注定尺长度</h4>
+                    <p>如工程需要固定长度，务必在合同中注明定尺长度及允许偏差，避免产生过多废料。常用定尺为6m、9m、12m。</p>
+                </div>
+                <div class="attention-item">
+                    <h4>⑥ 焊接加工注意</h4>
+                    <p>焊接等边角钢构件时，应参照相应焊接工艺，预热及焊材选择需匹配母材强度，确保连接可靠。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">等边角钢标准常见问题</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">等边角钢和不等边角钢如何区分？标准有何不同？</div>
+                <div class="faq-answer">等边角钢两边宽相等，以“∠边宽×边宽×边厚”表示；不等边角钢两边宽不相等，以“∠长边×短边×边厚”表示。两者均执行GB/T 706标准，但尺寸系列、截面特性及允许偏差在标准中分别列表规定。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">GB/T 706-2016与旧版GB/T 706-2008主要变化是什么？</div>
+                <div class="faq-answer">新版标准整合了热轧工字钢、槽钢、角钢等内容，调整了部分规格的尺寸允许偏差，删除了部分不常用规格，并更新了理论重量数值（因密度取值更精确）。具体变化需对照标准条文。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">如何快速计算等边角钢的理论重量？</div>
+                <div class="faq-answer">可采用近似公式：每米重量(kg)≈0.00785×(边宽+边宽-边厚)×边厚。例如∠50×50×5：0.00785×(50+50-5)×5=3.73kg/m，与表中3.77接近。精确值应以标准附录或国标重量表为准。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">等边角钢标准中是否包含不锈钢材质？</div>
+                <div class="faq-answer">GB/T 706适用于热轧碳素结构钢和低合金结构钢等普通型钢，不适用于不锈钢角钢。不锈钢等边角钢通常执行GB/T 4237（热轧不锈钢板和钢带）或其他专用标准，材质以304、316L等为代表。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">角钢的“型号”和“规格”有何区别？</div>
+                <div class="faq-answer">型号通常指边宽数值，例如“5号角钢”表示边宽为50mm的角钢。而规格是完整的尺寸表达，如∠50×50×5。标准中同时列出了型号与截面尺寸对应关系，方便工程人员习惯性称呼。</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h4>关于钢标网</h4>
+                <p>专注于钢铁产品标准与工程应用知识的分享平台，提供等边角钢标准、规格查询、重量计算等实用参考信息。本站内容仅供学习交流，具体工程应用请以最新正式标准文本为准。</p>
+            </div>
+            <div class="footer-links">
+                <h4>常用标准</h4>
+                <a href="#">GB/T 706-2016 热轧型钢</a>
+                <a href="#">GB/T 700 碳素结构钢</a>
+                <a href="#">GB/T 1591 低合金高强度钢</a>
+                <a href="#">GB/T 9787 热轧等边角钢(作废参考)</a>
+            </div>
+            <div class="footer-links">
+                <h4>快速导航</h4>
+                <a href="#">等边角钢尺寸表</a>
+                <a href="#">角钢重量计算公式</a>
+                <a href="#">不锈钢角钢标准</a>
+                <a href="#">采购招标信息</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 钢标网 GangBiao.Info 版权所有 | 建议使用最新版Chrome/Firefox浏览器访问</p>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
