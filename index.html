@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缅北视频-警惕网络诈骗与跨境风险警示专题</title>
+    <meta name="description" content="缅北视频相关内容需高度警惕，本页面旨在揭示缅北网络诈骗、电信诈骗及跨境人口贩卖的常见手段与真实风险，提供防范指南与法律警示，帮助公众提高安全意识。">
+    <meta name="keywords" content="缅北视频,缅北诈骗,电信诈骗,网络赌博,人口贩卖,跨境风险,防骗指南,安全警示">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #1c2b3a;
+            line-height: 1.6;
+        }
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 30px rgba(0,0,0,0.05);
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        /* 头部 */
+        .site-header {
+            background: #0a1a2b;
+            padding: 18px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 3px solid #c9a227;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+        }
+        .logo-icon {
+            background: #c9a227;
+            color: #0a1a2b;
+            font-weight: 900;
+            font-size: 24px;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            margin-right: 12px;
+        }
+        .logo-text {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            color: #c9a227;
+        }
+        .header-alert {
+            background: rgba(201, 162, 39, 0.15);
+            padding: 8px 18px;
+            border-radius: 30px;
+            color: #e0c36a;
+            font-size: 14px;
+            border: 1px solid #c9a227;
+        }
+        /* 导航 */
+        .main-nav {
+            background: #102a3c;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #1e3f55;
+        }
+        .main-nav a {
+            color: #cfdde8;
+            padding: 14px 22px;
+            font-size: 15px;
+            transition: 0.2s;
+            border-bottom: 3px solid transparent;
+        }
+        .main-nav a:hover, .main-nav a.active {
+            color: #fff;
+            background: #0d2233;
+            border-bottom-color: #c9a227;
+        }
+        /* 告警横幅 */
+        .alert-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1b1b 100%);
+            color: #e6d5b8;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #5c3a3a;
+        }
+        .alert-banner strong {
+            color: #ffd966;
+            margin: 0 5px;
+        }
+        /* 首屏 Hero */
+        .hero {
+            background: linear-gradient(145deg, #0b1c2a 0%, #1d3347 100%);
+            padding: 60px 30px 50px;
+            text-align: center;
+            color: #eef2f5;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #c9a227, #e5c76b, #c9a227);
+        }
+        .hero h1 {
+            font-size: 38px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .hero h1 i {
+            color: #c9a227;
+            font-style: normal;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 25px;
+            color: #b8cddd;
+            line-height: 1.8;
+        }
+        .hero-tag {
+            display: inline-block;
+            background: rgba(201, 162, 39, 0.2);
+            border: 1px solid #c9a227;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 14px;
+            color: #e8d9a0;
+            margin: 5px 8px;
+        }
+        /* 快速风险提示卡片 */
+        .quick-alert {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            background: #faf6ef;
+            border-bottom: 1px solid #e2d8c8;
+        }
+        .alert-item {
+            padding: 25px 22px;
+            text-align: center;
+            border-right: 1px solid #e8dfd0;
+        }
+        .alert-item:last-child {
+            border-right: none;
+        }
+        .alert-item .number {
+            font-size: 32px;
+            font-weight: 800;
+            color: #b22222;
+            line-height: 1.2;
+        }
+        .alert-item .label {
+            font-size: 15px;
+            color: #4a3f35;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+        .alert-item .desc {
+            font-size: 13px;
+            color: #7a6a5c;
+            margin-top: 8px;
+        }
+        /* 内容区域 */
+        .content-section {
+            padding: 45px 30px;
+        }
+        .section-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #0a1a2b;
+            margin-bottom: 30px;
+            padding-left: 18px;
+            border-left: 5px solid #c9a227;
+            line-height: 1.4;
+        }
+        .section-title small {
+            font-size: 15px;
+            font-weight: 400;
+            color: #6b7b89;
+            margin-left: 12px;
+        }
+        .two-col {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .article-text p {
+            margin-bottom: 18px;
+            font-size: 16px;
+            color: #2a3845;
+        }
+        .article-text h3 {
+            font-size: 20px;
+            margin: 25px 0 12px;
+            color: #0a1a2b;
+            border-left: 3px solid #b22222;
+            padding-left: 12px;
+        }
+        .side-panel {
+            background: #f5f0e8;
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #e2d6c2;
+        }
+        .side-panel h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #7a1e1e;
+            border-bottom: 2px solid #c9a227;
+            padding-bottom: 8px;
+        }
+        .side-panel ul li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #d4c7b5;
+            font-size: 15px;
+            display: flex;
+            align-items: baseline;
+        }
+        .side-panel ul li::before {
+            content: "⚠️";
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        /* 表格 */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0 25px;
+            font-size: 15px;
+        }
+        .data-table th {
+            background: #0a1a2b;
+            color: #fff;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dde3e8;
+        }
+        .data-table tr:nth-child(even) {
+            background: #f7f9fb;
+        }
+        .data-table td:first-child {
+            font-weight: 600;
+            color: #7a1e1e;
+        }
+        /* 警示卡 */
+        .warn-card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .warn-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #e0e4e8;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            transition: 0.2s;
+            border-top: 4px solid #b22222;
+        }
+        .warn-card:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            transform: translateY(-3px);
+        }
+        .warn-card .icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .warn-card h3 {
+            font-size: 18px;
+            color: #0a1a2b;
+            margin-bottom: 10px;
+        }
+        .warn-card p {
+            font-size: 14px;
+            color: #4a5a68;
+            line-height: 1.7;
+        }
+        /* 防范步骤 */
+        .steps {
+            counter-reset: step;
+            margin: 25px 0;
+        }
+        .step-item {
+            display: flex;
+            margin-bottom: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 5px solid #c9a227;
+        }
+        .step-num {
+            counter-increment: step;
+            flex-shrink: 0;
+            width: 45px;
+            height: 45px;
+            background: #0a1a2b;
+            color: #c9a227;
+            font-weight: 800;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .step-num::before {
+            content: counter(step);
+        }
+        .step-content h4 {
+            font-size: 17px;
+            margin-bottom: 6px;
+            color: #0a1a2b;
+        }
+        .step-content p {
+            font-size: 15px;
+            color: #3d4c5a;
+        }
+        /* FAQ */
+        .faq-list {
+            margin-top: 20px;
+        }
+        .faq-item {
+            background: #fff;
+            border: 1px solid #e3e8ed;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .faq-q {
+            background: #f1f5f9;
+            padding: 15px 20px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #0a1a2b;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-q::after {
+            content: "+";
+            font-size: 22px;
+            color: #c9a227;
+        }
+        .faq-a {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.3s;
+            font-size: 15px;
+            color: #3d4c5a;
+            line-height: 1.8;
+        }
+        .faq-item.active .faq-a {
+            padding: 15px 20px;
+            max-height: 300px;
+        }
+        .faq-item.active .faq-q::after {
+            content: "−";
+        }
+        /* 法律政策 */
+        .legal-box {
+            background: #eef6f6;
+            border-left: 5px solid #1a7a6a;
+            padding: 22px 25px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .legal-box h3 {
+            color: #0d5c4f;
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+        .legal-box p {
+            font-size: 15px;
+            color: #2b4a43;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #0a1a2b;
+            color: #7f95a5;
+            padding: 40px 30px 25px;
+            text-align: center;
+            font-size: 14px;
+            border-top: 4px solid #c9a227;
+        }
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        .footer-links a {
+            color: #a8bac7;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        .footer-disclaimer {
+            border-top: 1px solid #1e3a4e;
+            padding-top: 20px;
+            margin-top: 20px;
+            color: #607d8b;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .two-col {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .warn-card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .quick-alert {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .alert-item:nth-child(2) {
+                border-right: none;
+            }
+            .alert-item:nth-child(-n+2) {
+                border-bottom: 1px solid #e8dfd0;
+            }
+        }
+        @media (max-width: 768px) {
+            .site-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            .logo-area {
+                justify-content: center;
+            }
+            .main-nav {
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .content-section {
+                padding: 30px 18px;
+            }
+            .section-title {
+                font-size: 22px;
+            }
+            .warn-card-grid {
+                grid-template-columns: 1fr;
+            }
+            .quick-alert {
+                grid-template-columns: 1fr;
+            }
+            .alert-item {
+                border-right: none;
+                border-bottom: 1px solid #e8dfd0;
+            }
+            .alert-item:last-child {
+                border-bottom: none;
+            }
+            .data-table {
+                font-size: 13px;
+            }
+            .data-table th, .data-table td {
+                padding: 8px 10px;
+            }
+            .step-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .step-num {
+                margin-bottom: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 18px;
+            }
+            .header-alert {
+                font-size: 12px;
+                padding: 5px 12px;
+            }
+            .main-nav a {
+                padding: 10px 14px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- 头部 -->
+    <header class="site-header">
+        <div class="logo-area">
+            <div class="logo-icon">⚠️</div>
+            <div class="logo-text">安全<span>警示</span>台</div>
+        </div>
+        <div class="header-alert">电信诈骗 · 网络赌博 · 跨境陷阱</div>
+    </header>
+
+    <!-- 导航 -->
+    <nav class="main-nav">
+        <a href="#" class="active">首页</a>
+        <a href="#">诈骗类型</a>
+        <a href="#">真实案例</a>
+        <a href="#">防范指南</a>
+        <a href="#">法律法规</a>
+        <a href="#">求助渠道</a>
+    </nav>
+
+    <!-- 告警横幅 -->
+    <div class="alert-banner">
+        <strong>⚠️ 紧急提醒：</strong> 近期涉及"缅北视频"的诈骗诱饵激增，切勿点击不明链接或轻信高薪招聘信息！
+    </div>
+
+    <!-- 首屏 Hero -->
+    <section class="hero">
+        <h1>警惕<i>缅北视频</i>背后的陷阱</h1>
+        <p>网络上流传的"缅北视频"往往与电信诈骗、网络赌博和人口贩卖等违法犯罪活动相关联。这些内容不仅可能诱导公众上当受骗，还涉嫌传播非法信息。本专题带你认清套路，远离伤害。</p>
+        <div>
+            <span class="hero-tag">🔞 涉黄涉暴内容勿传播</span>
+            <span class="hero-tag">🎭 高薪招聘是陷阱</span>
+            <span class="hero-tag">🚨 发现线索请举报</span>
+        </div>
+    </section>
+
+    <!-- 快速数据警示 -->
+    <div class="quick-alert">
+        <div class="alert-item">
+            <div class="number">90%+</div>
+            <div class="label">缅北诈骗涉及</div>
+            <div class="desc">虚假招聘与交友诱导</div>
+        </div>
+        <div class="alert-item">
+            <div class="number">数万人</div>
+            <div class="label">被骗至境外</div>
+            <div class="desc">被迫从事非法活动</div>
+        </div>
+        <div class="alert-item">
+            <div class="number">3大</div>
+            <div class="label">常见骗术</div>
+            <div class="desc">杀猪盘、刷单、裸聊</div>
+        </div>
+        <div class="alert-item">
+            <div class="number">0容忍</div>
+            <div class="label">国家打击</div>
+            <div class="desc">中缅联合执法行动</div>
+        </div>
+    </div>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 什么是缅北视频陷阱 -->
+        <section class="content-section">
+            <h2 class="section-title">"缅北视频"到底是什么？<small>揭开网络乱象的真相</small></h2>
+            <div class="two-col">
+                <div class="article-text">
+                    <p>近年来，互联网上出现大量冠以"缅北视频"名义的内容，包括暴力恐怖、色情低俗、诈骗教学甚至赌博演示等。这些视频背后，往往隐藏着一条完整的黑色产业链。</p>
+                    <p>不法分子通过社交软件、短视频平台等渠道散布这些内容，目的通常有以下几个方面：</p>
+                    <h3>1. 诱骗求职者前往缅北</h3>
+                    <p>以"高薪招聘""海外工作""游戏代练"等名义，诱导国内年轻人偷渡至缅北地区，随后没收证件、限制人身自由，强迫从事电信诈骗活动。</p>
+                    <h3>2. 传播网络赌博与杀猪盘</h3>
+                    <p>利用"缅北视频"吸引眼球，将受害者引入虚假博彩平台或投资骗局。初期给予小额返利，待大额资金投入后便无法提现。</p>
+                    <h3>3. 实施裸聊敲诈勒索</h3>
+                    <p>诱导受害者下载含木马的APP或进行视频裸聊，随后以不雅视频威胁转账，陷入无底洞式的勒索。</p>
+                    <p>需要明确的是，<strong>观看、传播这类视频本身也存在法律风险</strong>。根据《网络安全法》和《治安管理处罚法》，传播暴力、淫秽信息将面临行政处罚，情节严重者可能构成犯罪。</p>
+                </div>
+                <aside class="side-panel">
+                    <h3>🚨 高危信号识别</h3>
+                    <ul>
+                        <li>陌生人发送不明"缅北视频"链接</li>
+                        <li>招聘信息宣称"月入数万、包吃包住"</li>
+                        <li>要求偷渡或持旅游签证前往边境</li>
+                        <li>以视频裸聊为诱饵索要隐私</li>
+                        <li>推荐不明博彩APP或投资平台</li>
+                        <li>要求下载安装非官方应用商店的APP</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- 常见诈骗类型表格 -->
+        <section class="content-section" style="background: #f8fafc; border-top: 1px solid #e5e9ef; border-bottom: 1px solid #e5e9ef;">
+            <h2 class="section-title">缅北相关诈骗类型全解析<small>认清套路才能有效防范</small></h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>诈骗类型</th>
+                        <th>常见话术/手段</th>
+                        <th>危害结果</th>
+                        <th>防范要点</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>高薪招聘骗局</td>
+                        <td>"月薪3-5万，会打字就行"</td>
+                        <td>被卖至诈骗窝点，遭暴力控制</td>
+                        <td>核实公司资质，拒绝偷渡</td>
+                    </tr>
+                    <tr>
+                        <td>杀猪盘（交友诱导）</td>
+                        <td>网恋对象介绍"内部投资渠道"</td>
+                        <td>大额资金被骗，人财两空</td>
+                        <td>网恋不转账，警惕高回报</td>
+                    </tr>
+                    <tr>
+                        <td>裸聊敲诈</td>
+                        <td>"下载APP免费视频聊天"</td>
+                        <td>隐私泄露，被威胁勒索</td>
+                        <td>拒绝裸聊，不装不明APP</td>
+                    </tr>
+                    <tr>
+                        <td>网络赌博</td>
+                        <td>"真人荷官，境外平台"</td>
+                        <td>沉迷赌博，倾家荡产</td>
+                        <td>任何赌博都是陷阱</td>
+                    </tr>
+                    <tr>
+                        <td>虚假绑架视频</td>
+                        <td>伪造被绑架视频向家属勒索</td>
+                        <td>家属恐慌，蒙受经济损失</td>
+                        <td>先核实人身安全，再报警</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 深度警示卡片 -->
+        <section class="content-section">
+            <h2 class="section-title">为什么"缅北视频"值得高度警惕？</h2>
+            <div class="warn-card-grid">
+                <div class="warn-card">
+                    <div class="icon">🎭</div>
+                    <h3>虚假人设包装</h3>
+                    <p>不法分子常以"成功人士""海外华侨"等身份出现，通过炫富视频、虚假定位建立信任感。所谓的"缅北视频"只是他们包装骗局的工具。</p>
+                </div>
+                <div class="warn-card">
+                    <div class="icon">📱</div>
+                    <h3>技术手段升级</h3>
+                    <p>利用AI换脸、虚拟号码、深度伪造等技术制作视频，甚至冒充公检法机关进行视频办案诈骗，极具迷惑性。</p>
+                </div>
+                <div class="warn-card">
+                    <div class="icon">⛓️</div>
+                    <h3>黑色产业链条</h3>
+                    <p>从人员招募、偷渡运输、窝点管理到洗钱分赃，已形成完整产业链。许多受害者一旦踏入缅北特定地区，便很难脱身。</p>
+                </div>
+            </div>
+
+            <!-- 防范步骤 -->
+            <h3 style="font-size: 22px; margin: 40px 0 10px; color: #0a1a2b;">个人防范六步法</h3>
+            <div class="steps">
+                <div class="step-item">
+                    <div class="step-num"></div>
+                    <div class="step-content">
+                        <h4>不点击、不下载、不传播</h4>
+                        <p>对来源不明的"缅北视频"链接保持高度警惕，不点击、不下载、不转发。发现此类内容立即向平台举报。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num"></div>
+                    <div class="step-content">
+                        <h4>警惕"高薪"诱惑</h4>
+                        <p>凡是宣称"低门槛、高薪酬、境外工作"的招聘信息，务必通过官方渠道核实公司背景。牢记：天上不会掉馅饼。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num"></div>
+                    <div class="step-content">
+                        <h4>保护个人隐私</h4>
+                        <p>不在网络聊天中透露身份证号、银行卡信息、家庭住址。拒绝任何形式的裸聊邀请和屏幕共享请求。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num"></div>
+                    <div class="step-content">
+                        <h4>安装反诈APP</h4>
+                        <p>主动下载"国家反诈中心"APP，开启来电预警功能。该APP可有效拦截诈骗电话和风险链接。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num"></div>
+                    <div class="step-content">
+                        <h4>亲属联动机制</h4>
+                        <p>与家人约定"安全暗号"，遇到疑似绑架或紧急求助时，先通过多渠道确认对方真实身份和位置。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num"></div>
+                    <div class="step-content">
+                        <h4>及时报警求助</h4>
+                        <p>一旦发现被骗或人身安全受到威胁，立即拨打110或96110（反诈专线）。如有人在境外失联，可联系中国驻缅甸使领馆。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 法律政策 -->
+        <section class="content-section" style="background: #fafbfd;">
+            <div class="legal-box">
+                <h3>📜 法律红线不容触碰</h3>
+                <p>根据《中华人民共和国刑法》第二百六十六条，诈骗公私财物数额较大的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金；数额特别巨大的，最高可判处无期徒刑。组织他人偷越国（边）境罪最高可判处无期徒刑。2023年以来，中缅警方已开展多轮联合执法行动，累计抓获犯罪嫌疑人数万名。</p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="content-section">
+            <h2 class="section-title">常见问题解答</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q">看到"缅北视频"链接，我可以点开看看吗？</div>
+                    <div class="faq-a">绝对不要点击！这些链接极有可能是钓鱼网站或木马病毒，一旦点击可能导致手机/电脑中毒、个人信息泄露甚至银行账户被盗。建议直接删除并举报。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">有人发私信说可以带我去缅北做游戏代练，月入两万，可信吗？</div>
+                    <div class="faq-a">这是典型的境外高薪诈骗话术。缅北地区电信诈骗窝点正是利用这种手段诱骗年轻人前往，到达后将被限制自由并被迫从事诈骗活动。请立即拒绝并报警。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">如果家人已经失联，疑似被骗至缅北，应该怎么办？</div>
+                    <div class="faq-a">①立即拨打110报警，提供详细信息和线索；②联系中国驻缅甸大使馆领事保护电话：+95-9-43209657；③同时向属地公安机关反诈中心求助。时间就是生命，越早报警营救希望越大。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">在网上转发"缅北视频"到微信群，有什么法律风险？</div>
+                    <div class="faq-a">如果视频内容涉及暴力、淫秽或宣扬违法犯罪，转发行为可能违反《治安管理处罚法》第六十八条，最高可处十五日拘留并处罚款。情节严重的，可能构成传播淫秽物品罪，面临刑事责任。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">防骗指南</a>
+            <a href="#">举报中心</a>
+            <a href="#">帮助中心</a>
+            <a href="#">隐私政策</a>
+        </div>
+        <p style="color: #8aa4b8;">全国反诈中心专线：96110 · 报警电话：110</p>
+        <div class="footer-disclaimer">
+            <p>免责声明：本站旨在提供网络安全警示与防骗教育信息，不传播、不存储任何违法视频内容。如遇可疑情况，请第一时间向公安机关举报。本页面内容基于公开信息整理，不构成任何法律意见。</p>
+            <p style="margin-top: 10px;">© 2024 安全警示台 · 维护网络清朗空间</p>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // FAQ 交互
+    document.querySelectorAll('.faq-q').forEach(function(q) {
+        q.addEventListener('click', function() {
+            var item = this.parentElement;
+            var isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(function(i) {
+                i.classList.remove('active');
+            });
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+</script>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+                                     </html>
